@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project name="XMLSymbolsConverter" basedir="." default="jar">
+	<property name="src" value="Ant-Source"/>
+	<property name="output" value="build"/>
+
+	<!-- to remove any Previous builds -->
+
+	<target name="clean">
+		<delete dir="${output}"/>
+	</target>
+
+
+
+	<!-- to initiate a new build directory -->
+
+	<target name="init" depends="clean">
+		<mkdir dir="${output}"/>
+	</target>
+
+
+	<!-- to compile the code from src -->
+	<!-- the destination directory is build -->
+
+	<target name="compile" depends="init">
+		<javac destdir="build">
+			<src path="${src}"/>
+			<classpath refid="java"/>
+		</javac>
+	</target>
+
+
+	<!-- starting point of the build file -->
+	<!-- creates the jar file -->
+
+	<target name="jar" depends="compile">
+		<jar destfile="Converter.java">
+			<fileset dir="build"/>
+		</jar>
+	</target>
+
+
+	<!-- reference for java -->
+
+	<path id="java">
+		<fileset dir="C:/Program Files/Java/jdk1.6.0_18/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+</project>

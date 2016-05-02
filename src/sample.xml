@@ -1,0 +1,120 @@
+<L:RECORD>
+	<L:EPOCH>1343389330.815</L:EPOCH>
+	<L:DATE>2012-07-27</L:DATE>
+	<L:TIME>12:42:10.815</L:TIME>
+	<L:HOST>21cnedc431z1</L:HOST>
+	<L:IP>10.213.247.172</L:IP>
+	<L:SERVER>managed1_mpaivvta</L:SERVER>
+	<L:PORT>61002</L:PORT>
+	<L:MESSAGEID>MPA_CheckProductAvailability_01059</L:MESSAGEID>
+	<L:CATEGORY>A</L:CATEGORY>
+	<L:SEVERITY>INFO</L:SEVERITY>
+	<L:E2EDATA>E2E.busTxnSys= BTnet Quick
+		Quo,E2E.compTxnID=2cxw70ioev,E2E.busTxnHdr=PCK002069,E2E.threadID=2cxw70io8s,E2E.threadID.1=MPA:2cxw70hyux:2cxw70io8s,E2E.busTxnSeq=2cxw70hygj,E2E.to=Lims
+		MRS
+		Client,E2E.compTxnName=JMS-SEND,E2E.busTxnStage=REQ,E2E.from=MPA,E2E.busTxnUsr=wlsuser,E2E.busProcOriginator=
+		BTnet Quick Quote,E2E.graphID=3,E2E.busTxnLoc=UNKNOWN</L:E2EDATA>
+	<L:TEXT>
+		Sent message to JMS: ID:1343389330792[B@13ca6b3: <?xml version="1.0" encoding="UTF-8"?>
+		<MTAEnvelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"
+			xmlns:S7="http://capabilities.nat.bt.com/xsd/ManageResourceService/2006/09/21"
+			xmlns:S22="http://capabilities.nat.bt.com/xsd/ManageResourceService/2006/09/21/CCM/Agreements"
+			xmlns:S157="http://capabilities.nat.bt.com/xsd/ManageResourceService/2006/09/21/CCM/BaseTypes"
+			xmlns:S203="http://capabilities.nat.bt.com/xsd/ManageResourceService/2006/09/21/CCM/Finance"
+			xmlns:S220="http://capabilities.nat.bt.com/xsd/ManageResourceService/2006/09/21/CCM/Parties"
+			xmlns:S262="http://capabilities.nat.bt.com/xsd/ManageResourceService/2006/09/21/CCM/Places"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:header="http://wsi.nat.bt.com/2005/06/StandardHeader/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ C:\paul\Workspace\MTA\Source\schema\MTAEnvelope.xsd">
+			<Body>
+				<S7:checkAvailabilityRequest>
+					<header:standardHeader>
+						<header:e2e>
+							<header:E2EDATA>7= BTnet Quick
+								Quo,6=PCK002069,1=2cxw70hyux,1.1=MPA:2cxw70hyux:,10=2cxw70hygj,9=wlsuser,15=MPA,4=
+								BTnet Quick Quote,8=UNKNOWN</header:E2EDATA>
+						</header:e2e>
+						<header:serviceState>
+							<header:stateCode></header:stateCode>
+						</header:serviceState>
+						<header:serviceAddressing>
+							<header:from>http://ccm.intra.bt.com/ManageProductAvailability</header:from>
+							<header:replyTo>
+								<header:address></header:address>
+								<header:contextItemList>
+									<header:contextItem contextName="CorrelationID"
+										contextId="CorrelationID">ID:1343389330792[B@13ca6b3</header:contextItem>
+								</header:contextItemList>
+							</header:replyTo>
+							<header:messageId>http://ccm.intra.bt.com/manageResourceInventory/2007030914:03:234</header:messageId>
+							<header:serviceName>http://www.altova.com</header:serviceName>
+							<header:action>http://www.altova.com</header:action>
+						</header:serviceAddressing>
+					</header:standardHeader>
+					<S7:function>
+						<S7:identifier>
+							<S7:type>request</S7:type>
+							<S7:value>1111</S7:value>
+						</S7:identifier>
+						<S7:action>CheckAvailability2</S7:action>
+						<S7:detail>
+							<S7:name>Product</S7:name>
+							<S7:value>LIMSE0001</S7:value>
+						</S7:detail>
+						<S7:detail>
+							<S7:name>MaxRadial</S7:name>
+							<S7:value>35000</S7:value>
+						</S7:detail>
+						<S7:elementAssociation>
+							<S7:type>Primary Location</S7:type>
+							<S7:identifier>
+								<S7:type>loc</S7:type>
+								<S7:value>Customer Location</S7:value>
+							</S7:identifier>
+						</S7:elementAssociation>
+						<S7:result></S7:result>
+					</S7:function>
+					<S7:networkElement>
+						<S7:identifier>
+							<S7:type>Location</S7:type>
+							<S7:value>Customer Location</S7:value>
+						</S7:identifier>
+						<S7:instanceCharacteristic>
+							<S7:name>Eastings</S7:name>
+							<S7:value>521590</S7:value>
+						</S7:instanceCharacteristic>
+						<S7:instanceCharacteristic>
+							<S7:name>Northings</S7:name>
+							<S7:value>164670</S7:value>
+						</S7:instanceCharacteristic>
+						<S7:instanceCharacteristic>
+							<S7:name>ResilienceElement</S7:name>
+							<S7:value></S7:value>
+						</S7:instanceCharacteristic>
+						<S7:instanceCharacteristic>
+							<S7:name>ResilienceOption</S7:name>
+							<S7:value></S7:value>
+						</S7:instanceCharacteristic>
+						<S7:instanceCharacteristic>
+							<S7:name>ExchangeCodeModifier</S7:name>
+							<S7:value></S7:value>
+						</S7:instanceCharacteristic>
+						<S7:instanceCharacteristic>
+							<S7:name>ExchangeCodeMaxNo</S7:name>
+							<S7:value>10</S7:value>
+						</S7:instanceCharacteristic>
+						<S7:instanceCharacteristic>
+							<S7:name>PostCode</S7:name>
+							<S7:value>IP1 2EG</S7:value>
+						</S7:instanceCharacteristic>
+					</S7:networkElement>
+				</S7:checkAvailabilityRequest>
+			</Body>
+		</MTAEnvelope>
+	</L:TEXT>
+	<L:APP_CONTEXT>NodeLocator[Specification:
+		Ethernet][CLIENT: ]</L:APP_CONTEXT>
+	<L:API_VER>BPTM Java API v3.3.9.6</L:API_VER>
+	<L:LOCATION>com.bt.adli.mpa.common.E2ETransaction.logMessage(E2ETransaction.java:250)</L:LOCATION>
+	<L:RECORD_VER>3.1</L:RECORD_VER>
+</L:RECORD>
